@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(96, 163, 154);
+  padding: 1rem;
+  border: 2px;
+}
+ul a {
+  color: rgb(93, 93, 192);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+/* Hero section*/
+
+#hero {
+  padding: 20px 0;
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: paleturquoise;
+  background-size: cover;
+  background-position: center;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  font-weight: 800;
+  color: rgb(93, 93, 192);
+}
+.hero-info h2 {
+  font-size: 30px;
+  width: 90%;
+  font-weight: 800;
+  color: rgb(93, 93, 192);
+}
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: rgb(93, 93, 192);
+  font-weight: 800px;
+}
+.hero-info a {
+  border-radius: 50%;
+  font-size: 14px;
+  color: blue;
+  background: linear-gradient(to right, rgb(93, 93, 192), paleturquoise);
+  padding: 10px 8px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: green;
+    background: #fff;
+  }
+}
+
+/*foto*/
+
+.card {
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+/*Info*/
+
+#info {
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: paleturquoise;
+}
+
+.info p {
+  font-size: 20px;
+  width: 100%;
+  color: blue;
+  padding: 20px 40px;
+  font-weight: 700;
+}
+/* card */
+#card {
+  margin-top: 10px;
+  max-width: 1500px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  border: solid;
+  align-items: center;
+  /* background-color: goldenrod;*/
+  background: linear-gradient(to right, rgb(93, 93, 192), paleturquoise);
+}
+.card h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.card p {
+  font-weight: 800;
+  width: 100%;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  max-width: 300px;
+  border: solid;
+  border-radius: 8px;
+  background-color: grey;
+}
+.card-img {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.cards-container h3 {
+  padding: 10px;
+}
+.cards-container p {
+  font-size: 14px;
+  font-weight: 800;
+  width: 70%;
+  color: rgb(209, 23, 23);
+  gap: 10px;
+  text-align: center;
+  /*...............................................................................*/
+}
+#Contacto {
+  padding: 20px 0;
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+
+  /*background-size: cover;
+  background-position: center;*/
+  background-color: grey;
+}
+.contacto h2 {
+  gap: 15px;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+.contacto p {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+.text {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  text-align: end;
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+
+  /*align-items: end;
+  align-content: end;*/
+}
+.buttons p {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.buttons a {
+  text-decoration: none;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: linear-gradient(to right, rgb(93, 93, 192), paleturquoise);
+
+  color: black;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+.buttons a:hover {
+  transform: scale(1.2);
+}
+.text {
+  justify-content: flex end;
+}
+.ubicacion {
+  justify-content: end;
+  text-align: center;
+}
+iframe.mapa {
+  width: 250px;
+  height: 150px;
+  align-content: flex end;
+  justify-content: end;
+  border-radius: 15px;
+}
+/*......................Formulario...................*/
+.container {
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+
+  text-align: center;
+  padding: 30px 35px 0px 35px;
+}
+.container header {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-princ {
+  width: 100%;
+  overflow: hidden;
+}
+.form-princ form {
+  display: flex;
+  width: 400%;
+}
+.form-princ form .pagina {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out; /*transición con inicio y final lento*/
+}
+.form-princ form .pagina .titulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-princ form .pagina .campo {
+  height: 35px;
+  width: 350px;
+  margin: 40px 0;
+  display: flex;
+  position: relative;
+}
+.form-princ form .pagina .campo .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+.form-princ form .pagina .campo input {
+  width: 80%; /*ver*/
+  height: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.form-princ form .pagina .campo select {
+  width: 80%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+}
+.form-princ form .pagina .campo button {
+  width: 80%; /* cambié de 100 a 80*/
+  height: calc(100% + 5px);
+  margin-top: 20px; /*cambié de -20 a 20*/
+  border: none;
+  background-color: rgb(8, 6, 146);
+  border-radius: 7px;
+  color: bisque;
+  font-size: 14px; /*cambié de 16 a 14*/
+  font-weight: 400; /*cambi´r de 500 a 400*/
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-princ form .pagina .campo button:hover {
+  background: palevioletred;
+}
+.form-princ form .pagina .btns button {
+  margin-top: -20px !important;
+}
+form .pagina .btns button.volver {
+  margin-right: 3px;
+  font-size: 14px; /*cambié de 17 a 14*/
+  font-weight: 400; /*agregué*/
+  width: 45%; /*--*/
+}
+form .pagina .btns button.adelante {
+  margin-left: 3px;
+  margin-right: 70px;
+  width: 50%;
+  gap: 10px;
+}
+form .pagina .btns button {
+  font-size: 14px; /*agregué*/
+  font-weight: 400;
+  margin-right: 70px;
+}
+/*........................*/
+.container .progress-bar {
+  display: flex;
+  margin: 40px 0;
+}
+.container .progress-bar .paso {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.progress-bar .paso p {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+.progress-bar .paso p.active {
+  color: palevioletred;
+}
+
+.progress-bar .paso .num {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block; /*caja en simultaneo en línea y en bloque*/
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px; /* para centrar*/
+  transition: 0.2s;
+}
+.progress-bar .paso .num.active {
+  border-color: palevioletred;
+  background-color: palevioletred;
+}
+.progress-bar .paso .num span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .paso .num.active span {
+  display: none;
+}
+.progress-bar .paso .check {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+}
+.progress-bar .paso .active .check {
+  color: white;
+  display: block;
+}
+/* pseudoelemento*/
+.progress-bar .paso .num:before,
+.progress-bar .paso .num:after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 5px;
+  bottom: 11px;
+  right: -43px;
+  background: black;
+}
+/*Pseudoclase*/
+.progress-bar .paso:last-child .num:before,
+.progress-bar .paso:last-child .num:after {
+  display: none;
+}
+.progress-bar .paso .num.active:after {
+  background: palevioletred;
+  animation: mov_Linea 0.3s linear forwards;
+  transform: scalex(0);
+  transform-origin: left;
+}
+@keyframes mov_Linea {
+  100% {
+    transform: scalex(1);
+  }
+}
+/* estilos para mostrar contraseña*/
+.ojitos {
+  position: absolute;
+  top: 30%;
+  right: 70px;
+  font-size: 18px;
+  color: rgb(8, 6, 146);
+}
+#ocultar {
+  display: none;
+}
+#mostrar,
+#ocultar {
+  cursor: pointer;
+}
+/* estilos para mostrar el mensaje de error*/
+.error {
+  color: red;
+}
+
+/*.........................................................................................................*/
+
+footer {
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, rgb(93, 93, 192), paleturquoise);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  height: 60px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer img {
+  height: 50px;
+}
